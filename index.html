@@ -3,274 +3,320 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Poolhouse op maat — Vlaamse vakmanschap, vaste prijs op papier</title>
+  <title>Poolhouse op maat — vaste prijs op papier, geen verkoper</title>
   <meta name="description" content="Bespoke poolhouses, ontworpen en gebouwd door één Vlaamse ploeg. Vaste prijs binnen tien dagen na het plaatsbezoek. Geen verkoper, geen achterafgebel." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <header class="topbar">
-    <a class="topbar__brand" href="#top">
-      <span class="topbar__mark" aria-hidden="true"></span>
-      <span class="topbar__name">[Bedrijfsnaam — placeholder]</span>
+  <header class="topbar" id="top">
+    <a class="brand" href="#top" aria-label="Naar boven">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 14 L8 6 L14 12 L22 4"/><path d="M14 12 L17 9"/></svg>
+      </span>
+      <span class="brand__name">[bedrijfsnaam]</span>
     </a>
-    <nav class="topbar__nav" aria-label="Hoofdnavigatie">
-      <a href="#werkwijze">Werkwijze</a>
-      <a href="#projecten">Projecten</a>
-      <a href="#garantie">Garantie</a>
-      <a class="topbar__cta" href="#aanvraag">Vraag een vaste prijs aan</a>
+    <nav class="topnav" aria-label="Hoofdnavigatie">
+      <a href="#wat-erin-zit">wat zit erin</a>
+      <a href="#werkwijze">werkwijze</a>
+      <a href="#projecten">projecten</a>
+      <a href="#garantie">garantie</a>
+      <a class="btn btn--gold btn--sm" href="#aanvraag">vraag een vaste prijs aan</a>
     </nav>
   </header>
 
-  <main id="top">
+  <main>
 
     <!-- HERO -->
     <section class="hero">
-      <!-- IMAGE: finished pool house at golden hour, pool visible in frame -->
       <img class="hero__bg"
-           src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=80"
+           src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2200&q=80"
            alt="Afgewerkt poolhouse bij avondlicht, naast een privézwembad."
            loading="eager" />
       <div class="hero__veil"></div>
-      <div class="hero__inner">
-        <p class="eyebrow">Poolhouses op maat — Vlaanderen &amp; Noord-Frankrijk</p>
-        <h1>Een poolhouse die past bij je tuin, niet bij de catalogus.</h1>
-        <p class="hero__sub">Ontworpen en gebouwd door één Vlaamse ploeg. Vaste prijs op papier binnen tien dagen na het plaatsbezoek — afwatering, stroom en vergunning inbegrepen.</p>
-        <a class="btn btn--primary" href="#aanvraag">Vraag een vaste prijs aan</a>
-        <p class="hero__proof"><span class="proof-tag">[PROOF — replace]</span> Meer dan 120 poolhouses gebouwd sinds 2011.</p>
+      <div class="hero__overlay">
+        <h1>uw <strong>poolhouse</strong> op maat</h1>
+        <p class="hero__sub">een vaste prijs op papier, binnen tien dagen na het plaatsbezoek</p>
+        <a class="btn btn--gold" href="#aanvraag">vraag een vaste prijs aan</a>
+      </div>
+      <a class="hero__scroll" href="#intro" aria-label="Naar beneden">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+      </a>
+    </section>
+
+    <!-- INTRO: two-col -->
+    <section class="intro" id="intro">
+      <div class="intro__grid">
+        <h2 class="intro__title">wij bouwen de <strong>poolhouse</strong> van uw dromen</h2>
+        <div class="intro__body">
+          <p>Eén Vlaamse ploeg ontwerpt, bouwt en werkt af. We sturen geen verkoper langs — onze vakman komt kijken, meet alles op, en stuurt u binnen tien dagen een vaste prijs op papier. Afwatering, stroom en het vergunningsdossier zitten erin. Reageert u niet? Dan bellen we niet na.</p>
+          <p class="proof"><span class="proof-tag">[PROOF — replace]</span> meer dan 120 poolhouses gebouwd sinds 2011 · erkend aannemer · padouk geleverd door Wijma</p>
+          <a class="link-more" href="#aanvraag">vraag een vaste prijs aan</a>
+        </div>
       </div>
     </section>
 
-    <!-- INCLUDED -->
-    <section class="section section--cards" id="wat-erin-zit">
-      <div class="section__head">
-        <h2>Wat er standaard in zit</h2>
-        <p>Eén poolhouse, vier vaste onderdelen. Geen losse modules, geen meerprijs voor het vanzelfsprekende.</p>
-      </div>
-      <div class="cards">
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="Overdekt loungegedeelte met houten plafond." loading="lazy" />
-          <h3>Overdekt loungegedeelte</h3>
-          <p>Zitten als het regent, of als de zon te fel staat. Open, of met schuifwanden.</p>
-        </article>
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=900&q=80" alt="Kleed- en doucheruimte in een poolhouse." loading="lazy" />
-          <h3>Kleed- en doucheruimte</h3>
-          <p>Warm water, droge handdoeken, geen natte voeten meer in huis.</p>
-        </article>
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=80" alt="Technische ruimte voor de pompinstallatie." loading="lazy" />
-          <h3>Technische ruimte</h3>
-          <p>Pomp, filter en chemie. Geventileerd, afwaterbaar, en altijd bereikbaar.</p>
-        </article>
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=900&q=80" alt="Outdoor kitchen met houten werkblok." loading="lazy" />
-          <h3>Outdoor kitchen <span class="card__optional">— optioneel</span></h3>
-          <p>Werkblok met aansluiting voor water, gas of plancha. Alleen als je het wil.</p>
-        </article>
+    <!-- WHAT'S INCLUDED -->
+    <section class="section section--alt" id="wat-erin-zit">
+      <div class="wrap">
+        <div class="section__head section__head--center">
+          <h2>wat er <strong>standaard</strong> in zit</h2>
+          <p>eén poolhouse, vier vaste onderdelen — geen meerprijs voor het vanzelfsprekende</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="Overdekt loungegedeelte met houten plafond." loading="lazy" />
+            <h3>overdekt loungegedeelte</h3>
+            <p>Zitten als het regent. Of als de zon te fel staat. Open, of met schuifwanden.</p>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=900&q=80" alt="Kleed- en doucheruimte in een poolhouse." loading="lazy" />
+            <h3>kleed- en doucheruimte</h3>
+            <p>Warm water, droge handdoeken. Geen natte voeten meer in huis.</p>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=80" alt="Technische ruimte voor de pompinstallatie." loading="lazy" />
+            <h3>technische ruimte</h3>
+            <p>Pomp, filter en chemie. Geventileerd, afwaterbaar, altijd bereikbaar.</p>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=900&q=80" alt="Outdoor kitchen met houten werkblok." loading="lazy" />
+            <h3>outdoor kitchen <em>— optioneel</em></h3>
+            <p>Werkblok met water, gas of plancha. Alleen als u het wil.</p>
+          </article>
+        </div>
       </div>
     </section>
 
     <!-- HOW WE WORK — the killer section -->
-    <section class="section section--alt" id="werkwijze">
-      <div class="section__head">
-        <p class="eyebrow">Hoe we werken</p>
-        <h2>Geen verkoper. Een vakman.</h2>
-        <p class="lede">We sturen geen verkoper langs. Onze vakman komt kijken, meet alles op, en stuurt je binnen tien dagen een vaste prijs op papier. Reageer je niet? Dan bellen we niet na.</p>
-      </div>
-      <ol class="steps">
-        <li>
-          <span class="steps__num">1</span>
-          <h3>Plaatsbezoek</h3>
-          <p>Binnen tien dagen na je aanvraag staat onze bouwer bij je zwembad. Geen brochure, geen presentatie. Hij kijkt, meet, en luistert.</p>
-        </li>
-        <li>
-          <span class="steps__num">2</span>
-          <h3>Vaste prijs op papier</h3>
-          <p>Tien dagen later ligt je prijs op tafel. Eén bedrag. Afwatering, elektriciteit en vergunningsdossier zitten erin.</p>
-        </li>
-        <li>
-          <span class="steps__num">3</span>
-          <h3>Vergunningsdossier</h3>
-          <p>Wij maken het op en dienen het in bij de gemeente. Jij hoeft zelf nergens langs.</p>
-        </li>
-        <li>
-          <span class="steps__num">4</span>
-          <h3>Bouw</h3>
-          <p>Acht weken na de vergunning starten we. Tien tot zestien weken later draai je de sleutel om.</p>
-        </li>
-      </ol>
-      <p class="section__aside">Geen call center. Geen mailfunnel. Geen tijdelijke kortingen.</p>
-    </section>
-
-    <!-- MATERIALS -->
-    <section class="section materials">
-      <div class="materials__copy">
-        <p class="eyebrow">Materialen &amp; vakwerk</p>
-        <h2>Hout, steen, brons. Geen plastic.</h2>
-        <p>Padouk of afzelia voor de gevel — duurzaam, kleurvast, wettig gekapt. Metselwerk in volle steen. Zinken of EPDM-dakranden, op maat geplooid. Beslag in geborsteld brons — geen plastic kruk die je dertig zomers lang aanraakt.</p>
-        <p class="proof"><span class="proof-tag">[PROOF — replace]</span> Erkend aannemer · Padouk geleverd door Wijma.</p>
-      </div>
-      <div class="materials__grid">
-        <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?auto=format&fit=crop&w=800&q=80" alt="Detailfoto van houten gevelbekleding." loading="lazy" />
-        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Detail van metselwerk in volle steen." loading="lazy" />
-        <img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?auto=format&fit=crop&w=800&q=80" alt="Geborsteld bronzen beslag op een houten deur." loading="lazy" />
-        <img src="https://images.unsplash.com/photo-1572883454114-1cf0031ede2a?auto=format&fit=crop&w=800&q=80" alt="Handen van een bouwer die ter plaatse meten." loading="lazy" />
+    <section class="section how" id="werkwijze">
+      <div class="wrap">
+        <div class="section__head">
+          <p class="eyebrow">hoe we werken</p>
+          <h2>geen <strong>verkoper</strong>. een vakman.</h2>
+          <p class="lede">We sturen geen verkoper langs. Onze vakman komt kijken, meet op, en stuurt u binnen tien dagen een vaste prijs op papier. Reageert u niet? Dan bellen we niet na.</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <span class="steps__num">01</span>
+            <h3>plaatsbezoek</h3>
+            <p>Binnen tien dagen na uw aanvraag staat onze bouwer bij uw zwembad. Geen brochure, geen presentatie. Hij kijkt, meet, en luistert.</p>
+          </li>
+          <li>
+            <span class="steps__num">02</span>
+            <h3>vaste prijs op papier</h3>
+            <p>Tien dagen later ligt uw prijs op tafel. Eén bedrag. Afwatering, elektriciteit en vergunningsdossier zitten erin.</p>
+          </li>
+          <li>
+            <span class="steps__num">03</span>
+            <h3>vergunningsdossier</h3>
+            <p>Wij maken het op en dienen het in bij de gemeente. U hoeft zelf nergens langs.</p>
+          </li>
+          <li>
+            <span class="steps__num">04</span>
+            <h3>bouw</h3>
+            <p>Acht weken na de vergunning starten we. Tien tot zestien weken later draait u de sleutel om.</p>
+          </li>
+        </ol>
+        <p class="how__aside">geen call center · geen mailfunnel · geen tijdelijke kortingen</p>
       </div>
     </section>
 
-    <!-- WARRANTY -->
+    <!-- MATERIALS — image left, text right -->
+    <section class="section section--alt">
+      <div class="wrap split">
+        <div class="split__img">
+          <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?auto=format&fit=crop&w=1200&q=80" alt="Detail van houten gevelbekleding in padouk." loading="lazy" />
+        </div>
+        <div class="split__copy">
+          <p class="eyebrow">materialen &amp; vakwerk</p>
+          <h2>hout, steen, <strong>brons</strong>. geen plastic.</h2>
+          <p>Padouk of afzelia voor de gevel — duurzaam, kleurvast, wettig gekapt. Metselwerk in volle steen. Zinken of EPDM-dakranden, op maat geplooid. Beslag in geborsteld brons — geen plastic kruk die u dertig zomers lang aanraakt.</p>
+          <p class="proof"><span class="proof-tag">[PROOF — replace]</span> erkend aannemer · padouk geleverd door Wijma</p>
+          <a class="link-more" href="#aanvraag">vraag een vaste prijs aan</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DETAIL GRID -->
+    <section class="section detail-grid">
+      <div class="wrap">
+        <div class="dgrid">
+          <figure><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80" alt="Detail van metselwerk in volle steen." loading="lazy" /><figcaption>volle steen</figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?auto=format&fit=crop&w=900&q=80" alt="Geborsteld bronzen beslag op een houten deur." loading="lazy" /><figcaption>geborsteld brons</figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1572883454114-1cf0031ede2a?auto=format&fit=crop&w=900&q=80" alt="Handen van een bouwer die ter plaatse meten." loading="lazy" /><figcaption>op locatie opgemeten</figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1542621334-a254cf47733d?auto=format&fit=crop&w=900&q=80" alt="Dakrand in geplooid zink." loading="lazy" /><figcaption>geplooid zink &amp; EPDM</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- WARRANTY: text-only quiet section -->
     <section class="section section--alt warranty" id="garantie">
-      <div class="warranty__inner">
-        <p class="eyebrow">Garantie</p>
-        <h2>Tien jaar garantie. Zwart op wit.</h2>
-        <p>Tien jaar op het draagwerk en het dak. Twee jaar op afwerking en beslag. De technische ruimte leveren we op met gegarandeerde ventilatie en afwatering, zodat pompen en filters bereikbaar én droog blijven. Wat gedekt is, staat in je contract — niets in kleine lettertjes.</p>
+      <div class="wrap warranty__wrap">
+        <p class="eyebrow">garantie</p>
+        <h2><strong>tien jaar</strong> garantie. zwart op wit.</h2>
+        <p>Tien jaar op het draagwerk en het dak. Twee jaar op afwerking en beslag. De technische ruimte leveren we op met gegarandeerde ventilatie en afwatering — pompen en filters blijven bereikbaar én droog. Wat gedekt is, staat in uw contract. Niets in kleine lettertjes.</p>
       </div>
     </section>
 
     <!-- PROJECTS -->
     <section class="section projects" id="projecten">
-      <div class="section__head">
-        <h2>Recent gebouwd</h2>
-        <p>Elke foto toont het poolhouse mét het zwembad. Anders is het maar een tuinhuis.</p>
-      </div>
-      <div class="gallery">
-        <figure>
-          <img src="https://images.unsplash.com/photo-1613553497126-a44624272024?auto=format&fit=crop&w=1000&q=80" alt="Poolhouse met outdoor kitchen in Knokke." loading="lazy" />
-          <figcaption>Poolhouse met outdoor kitchen — Knokke</figcaption>
-        </figure>
-        <figure>
-          <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1000&q=80" alt="Poolhouse in padouk met groot dakoverstek, Gent." loading="lazy" />
-          <figcaption>Poolhouse in padouk — Gent</figcaption>
-        </figure>
-        <figure>
-          <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=80" alt="Compact poolhouse met technische ruimte, Antwerpen." loading="lazy" />
-          <figcaption>Poolhouse met technische ruimte — Antwerpen</figcaption>
-        </figure>
-        <figure>
-          <img src="https://images.unsplash.com/photo-1572331165267-854da2b10ccc?auto=format&fit=crop&w=1000&q=80" alt="Compact poolhouse in Hasselt." loading="lazy" />
-          <figcaption>Compact poolhouse — Hasselt</figcaption>
-        </figure>
-        <figure>
-          <img src="https://images.unsplash.com/photo-1564540586988-aa4e53c3d799?auto=format&fit=crop&w=1000&q=80" alt="Poolhouse met dubbele schuifwand, Lille." loading="lazy" />
-          <figcaption>Poolhouse met dubbele schuifwand — Lille</figcaption>
-        </figure>
-        <figure>
-          <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&w=1000&q=80" alt="Poolhouse in metselwerk en hout, Brugge." loading="lazy" />
-          <figcaption>Metselwerk en hout — Brugge</figcaption>
-        </figure>
+      <div class="wrap">
+        <div class="section__head section__head--row">
+          <h2><strong>recent</strong> gebouwd</h2>
+          <a class="link-more" href="#aanvraag">vraag een vaste prijs aan</a>
+        </div>
+        <div class="gallery">
+          <figure>
+            <img src="https://images.unsplash.com/photo-1613553497126-a44624272024?auto=format&fit=crop&w=1000&q=80" alt="Poolhouse met outdoor kitchen in Knokke." loading="lazy" />
+            <figcaption>poolhouse met outdoor kitchen — Knokke</figcaption>
+          </figure>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1000&q=80" alt="Poolhouse in padouk met groot dakoverstek, Gent." loading="lazy" />
+            <figcaption>poolhouse in padouk — Gent</figcaption>
+          </figure>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=80" alt="Compact poolhouse met technische ruimte, Antwerpen." loading="lazy" />
+            <figcaption>met technische ruimte — Antwerpen</figcaption>
+          </figure>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1572331165267-854da2b10ccc?auto=format&fit=crop&w=1000&q=80" alt="Compact poolhouse in Hasselt." loading="lazy" />
+            <figcaption>compact poolhouse — Hasselt</figcaption>
+          </figure>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1564540586988-aa4e53c3d799?auto=format&fit=crop&w=1000&q=80" alt="Poolhouse met dubbele schuifwand, Lille." loading="lazy" />
+            <figcaption>dubbele schuifwand — Lille</figcaption>
+          </figure>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&w=1000&q=80" alt="Poolhouse in metselwerk en hout, Brugge." loading="lazy" />
+            <figcaption>metselwerk en hout — Brugge</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
     <!-- TESTIMONIALS -->
-    <section class="section testimonials">
-      <div class="testimonials__grid">
-        <blockquote>
-          <p>“Onze bouwer kwam op een vrijdag, mat alles op, en op woensdag lag de prijs in de bus. Geen telefoontje achteraf, geen druk. We hebben zelf gebeld toen we zeker waren.”</p>
-          <footer>— <span class="proof-tag">[PROOF — replace]</span> Sofie D., Gent</footer>
-        </blockquote>
-        <blockquote>
-          <p>“Ze hebben het bestaande gazon niet eens vuil gemaakt. De douche werkte op de dag dat ze klaar waren.”</p>
-          <footer>— <span class="proof-tag">[PROOF — replace]</span> Marc V., Knokke</footer>
-        </blockquote>
+    <section class="section section--alt testimonials">
+      <div class="wrap">
+        <div class="section__head">
+          <h2><strong>tevreden klanten</strong> over hun poolhouse</h2>
+        </div>
+        <div class="t-grid">
+          <blockquote>
+            <p>“Onze bouwer kwam op een vrijdag, mat alles op, en op woensdag lag de prijs in de bus. Geen telefoontje achteraf, geen druk. We hebben zelf gebeld toen we zeker waren.”</p>
+            <footer><span class="proof-tag">[PROOF — replace]</span> Sofie D. — Gent</footer>
+          </blockquote>
+          <blockquote>
+            <p>“Ze hebben het bestaande gazon niet eens vuil gemaakt. De douche werkte op de dag dat ze klaar waren.”</p>
+            <footer><span class="proof-tag">[PROOF — replace]</span> Marc V. — Knokke</footer>
+          </blockquote>
+        </div>
       </div>
     </section>
 
-    <!-- QUOTE FORM -->
-    <section class="section form-section" id="aanvraag">
-      <div class="form-wrap">
-        <div class="form-intro">
-          <p class="eyebrow">Aanvraag</p>
-          <h2>Vraag je vaste prijs aan</h2>
-          <p>Vul in wat je weet. Wat je niet weet, lossen we samen op tijdens het plaatsbezoek. We antwoorden enkel op het kanaal dat je zelf kiest.</p>
+    <!-- QUOTE FORM — gold block, Ostyn-style -->
+    <section class="cta-block" id="aanvraag">
+      <div class="wrap cta-block__inner">
+        <div class="cta-block__intro">
+          <h2>vraag uw <strong>vaste prijs</strong> aan</h2>
+          <p>Vul in wat u weet. Wat u niet weet, lossen we samen op tijdens het plaatsbezoek. We antwoorden enkel op het kanaal dat u zelf kiest.</p>
         </div>
 
         <form class="quote-form" method="post" action="#" novalidate>
           <div class="field">
-            <label for="voornaam">Voornaam</label>
+            <label for="voornaam">voornaam</label>
             <input id="voornaam" name="voornaam" type="text" autocomplete="given-name" required />
           </div>
 
           <div class="field-row">
             <div class="field">
-              <label for="gemeente">Gemeente</label>
+              <label for="gemeente">gemeente</label>
               <input id="gemeente" name="gemeente" type="text" autocomplete="address-level2" required />
             </div>
             <div class="field">
-              <label for="postcode">Postcode</label>
+              <label for="postcode">postcode</label>
               <input id="postcode" name="postcode" type="text" inputmode="numeric" autocomplete="postal-code" pattern="[0-9 ]{4,7}" required />
             </div>
           </div>
 
           <fieldset class="field">
-            <legend>Status van het zwembad</legend>
-            <label class="radio"><input type="radio" name="zwembad" value="bestaand" required /> <span>Bestaand</span></label>
-            <label class="radio"><input type="radio" name="zwembad" value="in-aanleg" /> <span>In aanleg</span></label>
-            <label class="radio"><input type="radio" name="zwembad" value="nog-te-plaatsen" /> <span>Nog te plaatsen</span></label>
+            <legend>status van het zwembad</legend>
+            <div class="radios">
+              <label class="radio"><input type="radio" name="zwembad" value="bestaand" required /> <span>bestaand</span></label>
+              <label class="radio"><input type="radio" name="zwembad" value="in-aanleg" /> <span>in aanleg</span></label>
+              <label class="radio"><input type="radio" name="zwembad" value="nog-te-plaatsen" /> <span>nog te plaatsen</span></label>
+            </div>
           </fieldset>
 
           <fieldset class="field">
-            <legend>Gewenste oppervlakte</legend>
-            <label class="radio"><input type="radio" name="oppervlakte" value="klein" required /> <span>Minder dan 30 m²</span></label>
-            <label class="radio"><input type="radio" name="oppervlakte" value="middel" /> <span>30 – 50 m²</span></label>
-            <label class="radio"><input type="radio" name="oppervlakte" value="groot" /> <span>Meer dan 50 m²</span></label>
-          </fieldset>
-
-          <div class="field">
-            <label for="startdatum">Gewenste startdatum <span class="optional">(optioneel)</span></label>
-            <input id="startdatum" name="startdatum" type="month" />
-          </div>
-
-          <div class="field">
-            <label for="foto">Foto van de tuin <span class="optional">(optioneel)</span></label>
-            <input id="foto" name="foto" type="file" accept="image/*" />
-            <p class="hint">Helpt ons om je situatie beter in te schatten vóór het plaatsbezoek.</p>
-          </div>
-
-          <fieldset class="field">
-            <legend>Hoe wil je dat we je antwoorden?</legend>
-            <label class="radio"><input type="radio" name="kanaal" value="email" checked /> <span>Per e-mail</span></label>
-            <label class="radio"><input type="radio" name="kanaal" value="telefoon" /> <span>Per telefoon</span></label>
+            <legend>gewenste oppervlakte</legend>
+            <div class="radios">
+              <label class="radio"><input type="radio" name="oppervlakte" value="klein" required /> <span>&lt; 30 m²</span></label>
+              <label class="radio"><input type="radio" name="oppervlakte" value="middel" /> <span>30 – 50 m²</span></label>
+              <label class="radio"><input type="radio" name="oppervlakte" value="groot" /> <span>&gt; 50 m²</span></label>
+            </div>
           </fieldset>
 
           <div class="field-row">
             <div class="field">
-              <label for="email">E-mailadres</label>
+              <label for="startdatum">gewenste startdatum <span class="optional">(optioneel)</span></label>
+              <input id="startdatum" name="startdatum" type="month" />
+            </div>
+            <div class="field">
+              <label for="foto">foto van de tuin <span class="optional">(optioneel)</span></label>
+              <input id="foto" name="foto" type="file" accept="image/*" />
+            </div>
+          </div>
+
+          <fieldset class="field">
+            <legend>hoe wil u dat we antwoorden?</legend>
+            <div class="radios">
+              <label class="radio"><input type="radio" name="kanaal" value="email" checked /> <span>per e-mail</span></label>
+              <label class="radio"><input type="radio" name="kanaal" value="telefoon" /> <span>per telefoon</span></label>
+            </div>
+          </fieldset>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="email">e-mailadres</label>
               <input id="email" name="email" type="email" autocomplete="email" />
             </div>
             <div class="field">
-              <label for="telefoon">Telefoonnummer</label>
+              <label for="telefoon">telefoonnummer</label>
               <input id="telefoon" name="telefoon" type="tel" autocomplete="tel" inputmode="tel" />
             </div>
           </div>
 
-          <button class="btn btn--primary btn--full" type="submit">Stuur mijn aanvraag</button>
-          <p class="hint">We bewaren je gegevens enkel om je aanvraag te beantwoorden. Geen nieuwsbrief, geen doorverkoop.</p>
+          <button class="btn btn--dark btn--full" type="submit">stuur mijn aanvraag</button>
+          <p class="hint">we bewaren uw gegevens enkel om uw aanvraag te beantwoorden — geen nieuwsbrief, geen doorverkoop</p>
         </form>
       </div>
     </section>
 
-    <!-- SECONDARY: brochure -->
-    <section class="section brochure">
-      <div class="brochure__inner">
-        <p>Liever eerst rustig kijken? <a href="#" class="link">Download de brochure</a> met onze recente projecten (pdf, 4 MB).</p>
+    <!-- BROCHURE -->
+    <section class="brochure">
+      <div class="wrap">
+        <p>liever eerst rustig kijken? <a href="#" class="link-more">download de brochure</a> met onze recente projecten (pdf, 4 mb)</p>
       </div>
     </section>
 
   </main>
 
   <footer class="footer">
-    <div class="footer__inner">
+    <div class="wrap footer__grid">
       <div>
-        <p class="footer__name">[Bedrijfsnaam — placeholder]</p>
-        <p>[Straat en nummer — placeholder]<br />[Postcode en gemeente — placeholder]</p>
+        <p class="footer__name">[bedrijfsnaam]</p>
+        <p>[straat en nummer]<br />[postcode en gemeente]</p>
       </div>
       <div>
         <p>BTW BE0XXX.XXX.XXX</p>
-        <p><a href="#" class="link">Privacybeleid</a></p>
+        <p><a class="link" href="#">privacybeleid</a></p>
+      </div>
+      <div class="footer__note">
+        <p>Vlaamse vakmanschap voor poolhouses op maat, sinds [jaar]. Werkzaam in heel Vlaanderen en Noord-Frankrijk.</p>
       </div>
     </div>
   </footer>
